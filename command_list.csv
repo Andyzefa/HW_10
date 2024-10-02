@@ -1,0 +1,27 @@
+    1  git config --global user.name "Andyzefa"
+    2  git config --global user.email krivoyrog.tk@gmail.com
+    3  git clone https://github.com/Andyzefa/HW_10.git
+    4  cd HV_10
+    5  git status
+    6  cd HW_10
+    7  touch text_ignore.txt
+    8  nano .gitignore
+    9  git status
+   10  git add .gitignore
+   11  git commit -m "ignored"
+   12  touch main_test.txt
+   13  git add main_test.txt
+   14  git commit -m "new file created"
+   15  git branch develop
+   16  git checkout develop
+   17  touch develop_test.txt
+   18  git add develop_test.txt
+   19  git commit -m "second file"
+   20  nano develop_test.txt
+   21  git status
+   22  git add develop_test.txt
+   23  git commit -m "text"
+   24  git checkout main
+   25  git merge develop
+   26  git log
+   27  history>command_list.csv
